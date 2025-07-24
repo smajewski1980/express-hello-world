@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001;
 app.get("/", (req, res) => res.type('html').send(html));
 
 //  add a new route for health check endpoint
-app.get('/health',(req, res) => {
+app.get("/health", (req, res) => {
   res.sendStatus(200)
 });
 
